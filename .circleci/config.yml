@@ -10,7 +10,7 @@ jobs:
           keys:
             - 'v1-dependencies-{{ checksum "package.json" }}'
             - v1-dependencies-
-      - run: npm install -g grunt-cli mocha istanbul
+      - run: sudo npm install -g grunt-cli mocha istanbul
       - run: npm install
       - save_cache:
           paths:
